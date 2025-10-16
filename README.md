@@ -2,4 +2,4 @@
 A Rice Leaf Disease Segmentation Method Based on Kolmogorov-Arnold Network and Wavelet-Enhanced State Space Model
 ## Data preparation
 
-more details will be released after researchreceived.
+more details will be released after research received.
