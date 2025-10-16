@@ -867,7 +867,7 @@ class SpatialAttentionModule(nn.Module):
         x = self.conv1(x)  # (B,2,H,W)-->(B,1,H,W)
         return self.sigmoid(x)  # (B,1,H,W)
 
-class KCSVSS(nn.Module):
+class KDAVSS(nn.Module):
     def __init__(self,hidden_dim: int = 0, drop_path: float = 0, norm_layer:
     Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
                  attn_drop_rate: float = 0, d_state: int = 16, **kwargs, ):
@@ -982,7 +982,7 @@ class VSSLayer_up(nn.Module):
         self.dim = dim
         self.use_checkpoint = use_checkpoint
         self.blocks = nn.ModuleList([
-            KCSVSS(
+            KDAVSS(
                 hidden_dim=dim,
                 drop_path=drop_path[i] if isinstance(drop_path, list) else drop_path,
                 norm_layer=norm_layer,
