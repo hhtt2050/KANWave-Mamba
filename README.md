@@ -30,6 +30,13 @@ A Rice Leaf Disease Segmentation Method Based on Kolmogorov-Arnold Network and W
             └── ...
 ```
 
+### Prerequisites
+`conda` virtual environment is recommended. 
+```bash
+conda create -n lsnet python=3.10
+pip install -r requirements.txt
+```
+
 ## Training models.
 ```
 cd code
